@@ -2,7 +2,7 @@
 # Author:wistn
 # since:2021-03-11
 # LastEditors:Do not edit
-# LastEditTime:2021-03-16
+# LastEditTime:2021-06-12
 # Description: github release and Python Package
 #
 
@@ -47,7 +47,6 @@ jobs:
               run: |
                   python -m pip install --upgrade pip
                   python -m pip install -r requirements.txt
-                  python sited_py/demo.py
                   python .github/workflows/changelog_new_section.py
                   echo "::set-output name=v_tag::v$(cat version)"
               # python -c "import sys; print(sys.version); "
