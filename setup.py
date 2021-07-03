@@ -3,7 +3,7 @@
 Author:wistn
 since:2021-01-20
 LastEditors:Do not edit
-LastEditTime:2021-06-12
+LastEditTime:2021-07-03
 Description:
 """
 from setuptools import setup, find_packages
@@ -96,7 +96,7 @@ if __name__ == "__main__":
         long_description=LONG_DESCRIPTION,
         long_description_content_type="text/markdown",
         url="https://github.com/wistn/sited_py",
-        keywords=["sited", "plugin","engine", "ddcat"],
+        keywords=["sited", "plugin", "engine", "ddcat"],
         platforms=["Windows", "Linux", " MacOS"],
         classifiers=[_ for _ in CLASSIFIERS.splitlines() if _],
         py_modules=py_modules,
@@ -109,7 +109,6 @@ if __name__ == "__main__":
         data_files=DATA_FILES,
         python_requires=">=3." + str(REQUIRED_PYTHON[1]) + ", <4",
         # “install_requires” should be used to specify what dependencies a project minimally needs to run. When the project is installed by pip, this is the specification that is used to install its dependencies.
-        install_requires=(["aiohttp>=3.7.3", "lxml>=4.5.0", "pyChakraCore>=0.2.0",],),
-        entry_points={"console_scripts": ["sited_py=sited_py.bin:main"]},
+        install_requires=(["aiohttp>=3.7.3", "lxml>=4.5.0", "pyChakraCore>=0.2.0",],)
     )
     setup(**metadata)
