@@ -1,6 +1,6 @@
 # Changelog
 
-### [1.4.1](https://github.com/wistn/sited_py/compare/v1.1.0...v1.4.1) (2021-07-03)
+### [1.4.2](https://github.com/wistn/sited_py/compare/v1.1.0...v1.4.2) (2021-07-03)
 
 -   update docs, config and version
 

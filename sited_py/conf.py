@@ -6,7 +6,7 @@ LastEditors:Do not edit
 LastEditTime:2021-09-21
 Description:
 """
-__version__ = "1.4.1"
+__version__ = "1.4.2"
 # 配置说明：1. 多多猫缓存中的文本缓存sited文件夹在本引擎也默认对应生成（运行插件后在files文件夹下出现，注意有时插件节点没返回数据时可以删除这个文件夹看看）。开启缓存后，异步请求的网页在有效期内再次请求才是同步。如要禁止缓存，可对下行注释，作用于 lib/org_noear_sited___FileCache.py;
 enableFileCache = 1
 # 2. SiteD插件容器/多多猫安卓版设置中有开发者模式开关，控制运行插件后在files文件夹里是否生成 sited_log.txt, sited_error.txt, sited_print.txt文件。多多猫里默认为关闭，本引擎默认为0即不生成。如要开启生成，下行改为1值，作用于 lib/org_noear_siteder_dao_Setting.py;
