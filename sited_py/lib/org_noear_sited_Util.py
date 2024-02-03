@@ -3,7 +3,7 @@
 Author:wistn
 since:2020-05-06
 LastEditors:Do not edit
-LastEditTime:2021-02-07
+LastEditTime:2021-09-21
 Description:
 """
 import re
@@ -173,7 +173,7 @@ class Util:
                 if response.headers:
                     for [Name, Value] in response.headers.items():
                         if "Set-Cookie".upper() == Name.upper():
-                            sb.extend([re.search(r"[^;]*", Value).group(0), ";"])
+                            sb.extend([re.search(r"[^;]+", Value).group(0), ";"])
                 if sb.__len__() > 0:
                     source.setCookies("".join(sb)[0:-1])  # 删除尾部分号
                 data = await response.text(msg.encode)
